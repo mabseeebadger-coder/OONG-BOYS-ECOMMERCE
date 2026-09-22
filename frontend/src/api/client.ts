@@ -5,7 +5,7 @@ import axios, {
 
 // 1. Core baseline gateway URLs (Updated fallback port to 5000 to match standard Express setups)
 const BASE_DOMAIN =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+  import.meta.env.API_BASE_URL || "http://localhost:3000";
 const API_PREFIX = "api"; // Aligns with Express app.use("/api", ...) routing
 const BASE_URL = `${BASE_DOMAIN}/${API_PREFIX}`;
 
