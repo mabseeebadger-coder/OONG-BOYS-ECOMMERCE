@@ -4,7 +4,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 // 🔴 PASTE YOUR ACTUAL FIREBASE UID HERE
-const TARGET_UID = "YOUR_EXACT_FIREBASE_UID_HERE";
+const TARGET_UID = "s07Syjg4SCTeK7kuXOiL512Abrh1";
 
 async function promoteToAdmin() {
   try {

@@ -45,7 +45,7 @@ export default function ContactPage() {
               <Phone className="w-5 h-5" />
             </div>
             <h3 className="font-serif font-bold text-lg text-[#2d4029] mb-2">
-              (+63) 9XX XXX XXXX
+              (+63) 9561671019
             </h3>
             <p className="text-xs sm:text-sm text-gray-400 font-medium leading-relaxed mb-4">
               Call us for inquiries about product orders, bulk purchases, or
