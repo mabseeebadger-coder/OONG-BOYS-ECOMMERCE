@@ -3,9 +3,10 @@ import axios, {
   type InternalAxiosRequestConfig,
 } from "axios";
 
-// 1. Core baseline gateway URLs (Updated fallback port to 5000 to match standard Express setups)
-const BASE_DOMAIN =
-  import.meta.env.API_BASE_URL || "http://localhost:3000";
+// 1. Core baseline gateway URLs
+const RAW_BASE_DOMAIN =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const BASE_DOMAIN = RAW_BASE_DOMAIN.replace(/\/+$/, "").replace(/\/api$/, "");
 const API_PREFIX = "api"; // Aligns with Express app.use("/api", ...) routing
 const BASE_URL = `${BASE_DOMAIN}/${API_PREFIX}`;
 
