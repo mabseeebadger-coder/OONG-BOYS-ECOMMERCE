@@ -28,13 +28,18 @@ app.use(
 );
 
 const FRONTEND_URL = process.env.CLIENT_URL || "http://localhost:5173";
+const LOCAL_HOSTS = new Set([
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+  FRONTEND_URL,
+]);
 
 app.use(
   cors({
     origin: (origin, callback) => {
       // Allow requests with no origin (Postman, cURL, server-side jobs)
-      // or requests coming from your frontend application
-      if (!origin || origin === FRONTEND_URL) {
+      // or requests coming from your local frontend during development
+      if (!origin || LOCAL_HOSTS.has(origin)) {
         callback(null, true);
       } else {
         callback(new Error(`CORS blocked for origin: ${origin}`));
