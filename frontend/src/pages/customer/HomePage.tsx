@@ -1,6 +1,6 @@
 import { ArrowRight, Star, Sprout, Truck } from "lucide-react";
 // Direct asset import ensures your IDE's Intellisense picks up the file paths instantly
-import heroMushroomBg from "../../assets/adjusted.jpg";
+import heroMushroomBg from "../../assets/logo.jpg";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import HowItWorks from "@/components/HowItWorks";
 
