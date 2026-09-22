@@ -5,7 +5,7 @@ import axios, {
 
 // 1. Core baseline gateway URLs
 const RAW_BASE_DOMAIN =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+  import.meta.env.VITE_API_BASE_URL || "https://oong-boys-ecommerce.onrender.com";
 const BASE_DOMAIN = RAW_BASE_DOMAIN.replace(/\/+$/, "").replace(/\/api$/, "");
 const API_PREFIX = "api"; // Aligns with Express app.use("/api", ...) routing
 const BASE_URL = `${BASE_DOMAIN}/${API_PREFIX}`;
