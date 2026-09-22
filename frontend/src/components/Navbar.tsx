@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useCart } from "@/context/cartContext";
-import logo from "@/assets/Logo.png";
+import logo from "@/assets/logo2.jpg";
 import { createPortal } from "react-dom";
 
 export default function Navbar() {
